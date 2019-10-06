@@ -1,6 +1,6 @@
 # BlockchainJS
 
-This project is an implementation of the essence of a Blockchain. It demonstrates the main aspects and the challenge of a distributed ledger.
+This project is an implementation of the essence of a Blockchain. It demonstrates the main aspects and the challenge of a Blockchain as a distributed ledger.
 
 ```
 BlockchainJS  
@@ -50,11 +50,11 @@ Blockchain
 ]
 ```
 
-This is what a Blockchain looks like printed in JSON format. You can see that the information of the previous block (previousHash) is stored in the subsequent block. A blockchain starts with a "Genesis Block" that has no previous hash. Once recorded, the data in any given block cannot be altered retroactively without alteration of all subsequent blocks, which requires consensus of the network majority.
+This is what a Blockchain looks like, printed in JSON format. You can see that the information of the previous block (previousHash) is stored in the subsequent block. A blockchain starts with a "Genesis Block" that has no previous hash. Once recorded, the data in any given block cannot be altered retroactively without alteration of all subsequent blocks, which requires consensus of the network majority, if the blockchain is distributed among the participants.
 
 ## What is consensus and why is it important?
 
-A Blockchain is a distributed ledger among multiple participants. Each participant can hold a copy of the ledger. There is no centralized database, no instances like a database admin or super user which can garantee the validity across the peers, but also can manipulate change blocks retroactively. It may even be that the blockchain grows differently at different nodes. How a valid block is created must be decided amongst the participants of the blockchain. Because anybody can submit blocks (even false ones, see [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault)), the *real* blockchain must be determined by specific consensus algorithms. 
+The best known implementations of a blockchain are in the form of a **distributed ledger** (Bitcoin, Ethereum etc.). Each participant can hold a copy of the ledger. There is no centralized database, no instances like a database admin or super user which can garantee the validity across the peers, but also could manipulate blocks retroactively. It may even be that the blockchain grows differently at different nodes. How a valid block is created must be decided amongst the participants of the blockchain. Because anybody can submit blocks (even false ones, see [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault)), the *real* blockchain must be determined by specific consensus algorithms. 
 
 ## How to use this project
 
